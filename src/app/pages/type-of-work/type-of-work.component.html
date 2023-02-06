@@ -1,0 +1,130 @@
+<!-- breadcrumb-area start -->
+<div class="breadcrumb-area" *ngIf="language">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb_box text-center">
+                    <h2 class="breadcrumb-title">{{language.typeOfWorkSubtitle}}</h2>
+                    <h5 class="breadcrumb-text">{{language.typeOfWorkSubtext}} </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb-area end -->
+
+
+<div id="main-wrapper" *ngIf="language">
+    <div class="site-wrapper-reveal">
+        <!--===========  feature-large-images-wrapper  Start =============-->
+        <div class="feature-large-images-wrapper section-space--ptb_100">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- section-title-wrap Start -->
+                        <div class="section-title-wrap text-center section-space--mb_30">
+                            <h3 class="heading mb-20">{{language.typeOfWorkTitle}} <br> <span
+                                    class="text-color-primary">{{language.typeOfWorkTitleSecond}}</span> </h3>
+                            <p class="title-dec-text">{{language.typeOfWorkText}}</p>
+                        </div>
+                        <!-- section-title-wrap Start -->
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--===========  feature-large-images-wrapper  Start =============-->
+            <div class="feature-large-images-wrapper section-space--pt_70">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row row--35">
+
+                                <div class="col-lg-4 col-md-6 mt-30">
+                                    <!-- Box large image warap Start -->
+                                    <a href="#" class="box-large-image__wrap wow move-up">
+                                        <div class="box-large-image__box">
+                                            <div class="box-large-image__midea">
+                                                <div class="images-midea">
+                                                    <img src="assets/images/box-image/1.jpg" class="img-fluid" alt="">
+                                                    <div class="heading-wrap">
+                                                        <h5 class="heading">{{language.typeOfWorkCardOneTitle}}</h5>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="box-large-image__content mt-30 text-center">
+                                                <p>{{language.typeOfWorkCardOneText}}</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- Box large image warap End -->
+                                </div>
+
+                                <div class="col-lg-4 col-md-6  mt-30">
+                                    <!-- Box large image warap Start -->
+                                    <a href="#" class="box-large-image__wrap wow move-up">
+                                        <div class="box-large-image__box">
+                                            <div class="box-large-image__midea">
+                                                <div class="images-midea">
+                                                    <img src="assets/images/box-image/2.jpg" class="img-fluid" alt="">
+                                                    <div class="heading-wrap">
+                                                        <h5 class="heading">{{language.typeOfWorkCardTwoTitle}} </h5>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="box-large-image__content mt-30 text-center">
+                                                <p>{{language.typeOfWorkCardTwoText}}</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- Box large image warap End -->
+                                </div>
+
+                                <div class="col-lg-4 col-md-6  mt-30">
+                                    <!-- Box large image warap Start -->
+                                    <a href="#" class="box-large-image__wrap wow move-up">
+                                        <div class="box-large-image__box">
+                                            <div class="box-large-image__midea">
+                                                <div class="images-midea">
+                                                    <img src="assets/images/box-image/3.jpg" class="img-fluid" alt="">
+                                                    <div class="heading-wrap">
+                                                        <h5 class="heading">{{language.typeOfWorkCardThreeTitle}}</h5>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="box-large-image__content mt-40 text-center">
+                                                <p>{{language.typeOfWorkCardThreeText}}</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- Box large image warap End -->
+                                </div>
+                            </div>
+
+                            <div class="section-under-heading text-center section-space--mt_60">
+                                {{language.aboutUsChallenge}} <a
+                                    routerLink="/contact-us">{{language.aboutTakeTheChallenge}}</a></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--===========  feature-large-images-wrapper  End =============-->
+
+
+
+        </div>
+        <!--===========  feature-large-images-wrapper  End =============-->
+        <app-call-us-promo></app-call-us-promo>
+    </div>
+
+</div>

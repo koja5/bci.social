@@ -1,0 +1,20 @@
+{
+    "title": "What are cookies on websites?",
+    "text": [
+        "Cookies are small files of information that a web server generates and sends to a web browser. Web browsers store the cookies they receive for a predetermined period of time, or for the length of a user's session on a website. They attach the relevant cookies to any future requests the user makes of the web server.",
+        "   ",
+        "Cookies help inform websites about the user, enabling the websites to personalize the user experience. For example, ecommerce websites use cookies to know what merchandise users have placed in their shopping carts. In addition, some cookies are necessary for security purposes, such as authentication cookies (see below).",
+        "   ",
+        "The cookies that are used on the Internet are also called HTTP cookies. Like much of the web, cookies are sent using the HTTP protocol.",
+        "   ",
+        "Web browsers store cookies in a designated file on users' devices. The Google Chrome web browser, for instance, stores all cookies in a file labeled Cookies. Chrome users can view the cookies stored by the browser by opening developer tools, clicking the Application tab, and clicking on Cookies in the left side menu.",
+        "   ",
+        "User sessions: Cookies help associate website activity with a specific user. A session cookie contains a unique string (a combination of letters and numbers) that matches a user session with relevant data and content for that user.",
+        "   ",
+        "Suppose Alice has an account on a shopping website. She logs into her account from the website's homepage. When she logs in, the website's server generates a session cookie and sends the cookie to Alice's browser. This cookie tells the website to load Alice's account content, so that the homepage now reads, 'Welcome, Alice.'",
+        "   ",
+        "Alice then clicks to a product page displaying a pair of jeans. When Alice's web browser sends an HTTP request to the website for the jeans product page, it includes Alice's session cookie with the request. Because the website has this cookie, it recognizes the user as Alice, and she does not have to log in again when the new page loads.",
+        "   ",
+        "Personalization: Cookies help a website remember user actions or user preferences, enabling the website to customize the user's experience."
+    ]
+}

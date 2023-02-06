@@ -1,0 +1,22 @@
+<div class="language-menu" *ngIf="language">
+    <ul>
+        <li>
+            <a href="#" class="{{page ? 'text-black' : 'text-white'}}">
+                <img class="ls-flag selected-flag" src="assets/images/flags/{{selectionLanguage}}.webp"
+                    alt="{{selectionLanguage}}" title="{{selectionLanguage}}">
+                <span class="wpml-ls-native">{{language[selectionLanguage]}}</span>
+            </a>
+
+            <ul class="ls-sub-menu">
+                <li class="" *ngFor="let item of allLangs">
+                    <a (click)="changeLanguage(item.name)" class="text-black">
+                        <img class="ls-flag" src="assets/images/flags/{{item.name}}.webp" alt="en"
+                            title="Français"><span class="wpml-ls-native">{{language[item.name]}}</span>
+                    </a>
+                </li>
+            </ul>
+
+        </li>
+
+    </ul>
+</div>

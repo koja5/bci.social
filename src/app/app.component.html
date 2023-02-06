@@ -1,0 +1,52 @@
+<body>
+  <div class="preloader-activate preloader-active open_tm_preloader">
+    <div class="preloader-area-wrap">
+      <div class="spinner d-flex justify-content-center align-items-center h-100">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+    </div>
+  </div>
+
+  <app-navigation></app-navigation>
+
+  <div id="main-wrapper">
+    <div class="site-wrapper-reveal">
+      <router-outlet></router-outlet>
+
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+
+
+  <div class="cookie-message" *ngIf="cookieRead&&language">
+    <img src="../../../assets/images/icons/cookie.png">
+    <span>{{language.cookieMessage}} <a routerLink="/cookie">{{language.here}}</a>.</span>
+    <a class="close" (click)="setCookieRead()"><i class="fa fa-times"></i></a>
+  </div>
+
+  <!--====================  scroll top ====================-->
+  <a href="#" class="scroll-top {{scrollToTop}}" id="scroll-top">
+    <i class="arrow-top fal fa-long-arrow-up"></i>
+    <i class="arrow-bottom fal fa-long-arrow-up"></i>
+  </a>
+
+  <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+  <!-- jQuery JS -->
+  <script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="assets/js/vendor/bootstrap.min.js"></script>
+
+  <!-- Plugins JS (Please remove the comment from below plugins.min.js for better website load performance and remove plugin js files from avobe) -->
+
+  <script src="assets/js/plugins/plugins.min.js"></script>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+
+</body>

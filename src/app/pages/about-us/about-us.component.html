@@ -1,0 +1,165 @@
+<div id="main-wrapper" *ngIf="language">
+    <div class="site-wrapper-reveal">
+        <div class="about-banner-wrap banner-space about-us-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 m-auto">
+                        <div class="about-banner-content text-center">
+                            <h1 class="mb-15 text-white">{{language.aboutUsTitle}}</h1>
+                            <h5 class="font-weight--normal text-white">{{language.aboutUsText}} </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--===========  feature-large-images-wrapper  Start =============-->
+        <div class="feature-large-images-wrapper section-space--ptb_100">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- section-title-wrap Start -->
+                        <div class="section-title-wrap text-center section-space--mb_60">
+                            <h6 class="section-sub-title mb-20">{{language.aboutUsCardOneTitle}}</h6>
+                            <h3 class="heading">{{language.aboutUsCardOneText}} <br>
+                                {{language.aboutUsCardOneTextSecond}} <span class="text-color-primary">
+                                    {{language.aboutUsCardOneTextThree}}</span></h3>
+                        </div>
+                        <!-- section-title-wrap Start -->
+                    </div>
+                </div>
+
+                <div class="cybersecurity-about-box section-space--pb_70">
+                    <div class="row">
+                        <div class="col-lg-4 offset-lg-1">
+                            <div class="modern-number-01">
+                                <h2 class="heading  me-5"><span class="mark-text">8</span>{{language.yearsExperience}}
+                                </h2>
+                                <h6 class="heading mt-30">{{language.moreAboutSuccessStory}}</h6>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 offset-lg-1">
+                            <div class="cybersecurity-about-text">
+                                <div class="text">{{language.aboutOurCompanyText}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="feature-images__six">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 wow move-up">
+                                    <!-- ht-box-icon Start -->
+                                    <div class="ht-box-images style-06">
+                                        <div class="image-box-wrap">
+                                            <div class="box-image">
+                                                <div class="default-image">
+                                                    <img class="img-fulid"
+                                                        src="assets/images/icons/mitech-box-image-style-06-image-01-120x120.webp"
+                                                        alt="">
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="heading">{{language.aboutUsCardTwoTitle}}</h5>
+                                                <div class="text">{{language.aboutUsCardTwoText}}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ht-box-icon End -->
+                                </div>
+                                <div class="col-lg-4 col-md-6 wow move-up">
+                                    <!-- ht-box-icon Start -->
+                                    <div class="ht-box-images style-06">
+                                        <div class="image-box-wrap">
+                                            <div class="box-image">
+                                                <div class="default-image">
+                                                    <img class="img-fulid"
+                                                        src="assets/images/icons/mitech-box-image-style-06-image-02-120x120.webp"
+                                                        alt="">
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="heading">{{language.aboutUsCardThreeTitle}}</h5>
+                                                <div class="text">{{language.aboutUsCardThreeText}}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ht-box-icon End -->
+                                </div>
+                                <div class="col-lg-4 col-md-6 wow move-up">
+                                    <!-- ht-box-icon Start -->
+                                    <div class="ht-box-images style-06">
+                                        <div class="image-box-wrap">
+                                            <div class="box-image">
+                                                <div class="default-image">
+                                                    <img class="img-fulid"
+                                                        src="assets/images/icons/mitech-box-image-style-06-image-03-120x120.webp"
+                                                        alt="">
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="heading">{{language.aboutUsCardFourTitle}}</h5>
+                                                <div class="text">{{language.aboutUsCardFourText}}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ht-box-icon End -->
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="section-under-heading text-center section-space--mt_60">
+                            {{language.aboutUsChallenge}} <a
+                                routerLink="/contact-us">{{language.aboutTakeTheChallenge}}</a></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--===========  feature-large-images-wrapper  End =============-->
+
+        <!--========= About Delivering Wrapper Start ===========-->
+        <app-about-us-delivering></app-about-us-delivering>
+        <!--=========== fun fact Wrapper Start ==========-->
+        <!-- <div class="fun-fact-wrapper bg-theme-default section-space--pb_30 section-space--pt_60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 wow move-up">
+                        <div class="fun-fact--two text-center">
+                            <div class="fun-fact__count counter">120</div>
+                            <h6 class="fun-fact__text">Happy clients</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 wow move-up">
+                        <div class="fun-fact--two text-center">
+                            <div class="fun-fact__count counter">32</div>
+                            <h6 class="fun-fact__text">Finished projects</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 wow move-up">
+                        <div class="fun-fact--two text-center">
+                            <div class="fun-fact__count counter">73</div>
+                            <h6 class="fun-fact__text">Skilled Experts</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 wow move-up">
+                        <div class="fun-fact--two text-center">
+                            <div class="fun-fact__count counter">318</div>
+                            <h6 class="fun-fact__text">Media Posts</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!--=========== fun fact Wrapper End ==========-->
+
+        <app-call-us-promo></app-call-us-promo>
+    </div>

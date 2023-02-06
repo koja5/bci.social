@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>contact form</title>
+</head>
+
+<body *ngIf="language">
+    <!-- breadcrumb-area start -->
+    <div class="breadcrumb-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_box text-center">
+                        <h2 class="breadcrumb-title">{{language.contactMainTitle}}</h2>
+                        <h5 class="breadcrumb-title">{{language.contactMainText}}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumb-area end -->
+
+
+
+    <div id="main-wrapper">
+        <div class="site-wrapper-reveal">
+            <div class="contact-us-section-wrappaer section-space--pt_100 section-space--pb_70">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-lg-6">
+                            <div class="conact-us-wrap-one mb-30">
+                                <h3 class="heading">{{language.contactDescriptionTitleOne}}
+                                    <br>{{language.contactDescriptionTitleTwo}} <br><span
+                                        class="text-color-primary">{{language.contactDescriptionTitleThree}}</span>
+                                    {{language.contactDescriptionTitleFour}}
+                                </h3>
+                                <div class="sub-heading">{{language.contactDescriptionTitleFive}} <br>
+                                    {{language.contactDescriptionTitleSix}}</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-lg-6">
+                            <div class="contact-form-wrap">
+
+                                <form action="https://api.web3forms.com/submit" method="POST">
+                                    <input type="hidden" name="access_key" value="df58283c-9349-4a3f-b3d2-32d8399233e8">
+                                    <div class="contact-form">
+                                        <div class="contact-inner">
+                                            <input name="Name" type="text" placeholder="{{language.contactFormName}}">
+                                        </div>
+                                        <div class="contact-input">
+                                            <div class="contact-inner">
+                                                <input name="Telephone" type="text"
+                                                    placeholder="{{language.contactFormTelephone}}">
+                                            </div>
+                                            <div class="contact-inner">
+                                                <input name="Email" type="email"
+                                                    placeholder="{{language.contactFormEmail}}">
+                                            </div>
+                                        </div>
+                                        <div class="contact-inner">
+                                            <input name="Company name" type="text"
+                                                placeholder="{{language.contactFormCompanyName}}">
+                                        </div>
+
+                                        <div class="contact-inner">
+                                            <select class="form-control" name="Count of employees" id="countOfEmployees"
+                                                required="">
+                                                <option value="undefined" selected="" disabled="">
+                                                    {{
+                                                    language.contactFormCompanySize
+                                                    }}
+                                                </option>
+                                                <option *ngFor="let item of language.requestDemoDropdownNumbers"
+                                                    value="{{ item }}">
+                                                    {{ item }}
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="contact-inner contact-message">
+                                            <textarea name="Message"
+                                                placeholder="{{language.contactFormMessage}}"></textarea>
+                                        </div>
+                                        <div class="submit-btn mt-20">
+                                            <button class="ht-btn ht-btn-md"
+                                                type="submit">{{language.contactFormSendMessage}}</button>
+                                            <p class="form-messege"></p>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="contact-us-info-wrappaer section-space--pb_100">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-6 text-center">
+                            <div class="conact-info-wrap mt-30">
+                                <h5 class="heading mb-20">{{language.contactFormSerbiaCountry}}</h5>
+                                <ul class="conact-info__list">
+                                    <li><a href="mailto:{{language.contactEmail}}"
+                                            class="hover-style-link text-color-primary">{{language.contactEmail}}</a>
+                                    </li>
+                                    <li><a href="tel:{{language.contactFormSerbiaPhone}}"
+                                            class="hover-style-link text-black font-weight--bold">{{language.contactFormSerbiaPhone}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 text-center">
+                            <div class="conact-info-wrap mt-30">
+                                <h5 class="heading mb-20">{{language.contactFormAustriaCountry}}</h5>
+                                <ul class="conact-info__list">
+                                    <li><a href="mailto:{{language.contactEmail}}"
+                                            class="hover-style-link text-color-primary">{{language.contactEmail}}</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="hover-style-link text-black font-weight--bold">{{language.contactFormAustriaPhone}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <app-call-us></app-call-us>
+
+        </div>
+    </div>
+</body>

@@ -1,0 +1,244 @@
+<!--====================  header area ====================-->
+<div *ngIf="language">
+    <div class="header-area header-area--absolute" *ngIf="!page">
+
+        <div class="header-top-bar-info border-bottom d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="top-bar-wrap">
+                            <div class="top-bar-left">
+                                <div class="top-bar-text text-white">
+                                    <!-- header right box -->
+                                    <div class="header-left-box">
+                                        <div class="header-left-inner" id="hidden-icon-wrapper">
+
+                                            <app-language></app-language>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top-bar-right">
+                                <ul class="top-bar-info">
+                                    <li class="info-item">
+                                        <a href="tel:{{language.contactTelephone}}" class="info-link text-white">
+                                            <i class="info-icon fa fa-phone"></i>
+                                            <span
+                                                class="info-text"><strong>{{language.contactTelephone}}</strong></span>
+                                        </a>
+                                    </li>
+                                    <li class="info-item text-white">
+                                        <i class="info-icon fa fa-map-marker-alt"></i>
+                                        <span class="info-text">{{language.contactEmail}}</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom-wrap header-sticky {{scroll}}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="header position-relative">
+                            <!-- brand logo -->
+                            <div class="header__logo">
+                                <a href="index.html">
+                                    <img src="assets/images/logo-short.png" width="65" height="48"
+                                        class="img-fluid light-logo" alt="">
+                                    <img src="assets/images/logo-short.png" width="65" height="48"
+                                        class="img-fluid dark-logo" alt="">
+                                </a>
+                            </div>
+
+                            <div class="header-right">
+                                <!-- navigation menu -->
+                                <div class="header__navigation menu-style-four d-none d-xl-block">
+                                    <nav class="navigation-menu">
+                                        <ul>
+                                            <li>
+                                                <a routerLink="/"><span>{{language.navigationMenuHome}}</span></a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    routerLink="about-us"><span>{{language.navigationMenuAboutUs}}</span></a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    routerLink="/our-service"><span>{{language.navigationMenuServices}}</span></a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    routerLink="/type-of-work"><span>{{language.navigationMenuTypeOfWork}}</span></a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    routerLink="/contact-us"><span>{{language.navigationMenuContact}}</span></a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+
+                                <!-- mobile menu -->
+                                <div class="mobile-navigation-icon white-md-icon d-block d-xl-none"
+                                    id="mobile-menu-trigger" (click)="showMobileMenu()">
+                                    <i></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--====================  End of header area  ====================-->
+
+    <div class="header-area header-area--default" *ngIf="page">
+
+        <!-- Header Top Wrap Start -->
+        <div class="header-top-wrap border-bottom">
+            <div class="container-fluid">
+            </div>
+        </div>
+        <!-- Header Top Wrap End -->
+
+        <!-- Header Bottom Wrap Start -->
+        <div class="header-bottom-wrap header-sticky  {{scroll}}">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="header default-menu-style position-relative">
+
+                            <!-- brand logo -->
+                            <div class="header__logo">
+                                <a routerLink="/">
+                                    <img src="assets/images/logo-short.png" width="65" height="48"
+                                        class="img-fluid light-logo" alt="">
+                                    <img src="assets/images/logo-short.png" width="65" height="48"
+                                        class="img-fluid dark-logo" alt="">
+                                </a>
+                            </div>
+
+                            <!-- header midle box  -->
+                            <div class="header-midle-box">
+                                <div class="header-bottom-wrap d-md-block d-none">
+                                    <div class="header-bottom-inner">
+                                        <div class="header-bottom-left-wrap">
+                                            <!-- navigation menu -->
+                                            <div class="header__navigation d-none d-xl-block">
+                                                <nav class="navigation-menu primary--menu">
+
+                                                    <ul>
+                                                        <li>
+                                                            <a
+                                                                routerLink="/"><span>{{language.navigationMenuHome}}</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                routerLink="about-us"><span>{{language.navigationMenuAboutUs}}</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                routerLink="/our-service"><span>{{language.navigationMenuServices}}</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                routerLink="/type-of-work"><span>{{language.navigationMenuTypeOfWork}}</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                routerLink="/contact-us"><span>{{language.navigationMenuContact}}</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- header right box -->
+                                <div class="header-right-box">
+                                    <div class="header-right-inner" id="hidden-icon-wrapper">
+                                        <app-language></app-language>
+                                    </div>
+
+                                    <!-- mobile menu -->
+                                    <div class="mobile-navigation-icon d-block d-xl-none" id="mobile-menu-trigger"
+                                        (click)="showMobileMenu()">
+                                        <i></i>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header Bottom Wrap End -->
+
+    </div>
+    <!--====================  End of header area  ====================-->
+
+
+    <!--====================  mobile menu overlay ====================-->
+    <div class="mobile-menu-overlay {{mobileMenu}}" id="mobile-menu-overlay">
+        <div class="mobile-menu-overlay__inner">
+            <div class="mobile-menu-overlay__header">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-8">
+                            <!-- logo -->
+                            <div class="logo">
+                                <a routerLink="/">
+                                    <img src="assets/images/logo-short.png" class="img-fluid" alt=""
+                                        style="width: 55px;">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-4">
+                            <!-- mobile menu content -->
+                            <div class="mobile-menu-content text-end" (click)="showMobileMenu()">
+                                <span class="mobile-navigation-close-icon" id="mobile-menu-close-trigger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu-overlay__body">
+                <nav class="offcanvas-navigation">
+                    <ul>
+                        <li>
+                            <a routerLink="/"><span>{{language.navigationMenuHome}}</span></a>
+                        </li>
+                        <li>
+                            <a routerLink="about-us"><span>{{language.navigationMenuAboutUs}}</span></a>
+                        </li>
+                        <li>
+                            <a routerLink="/our-service"><span>{{language.navigationMenuServices}}</span></a>
+                        </li>
+                        <li>
+                            <a routerLink="/type-of-work"><span>{{language.navigationMenuTypeOfWork}}</span></a>
+                        </li>
+                        <li>
+                            <a routerLink="/contact-us"><span>{{language.navigationMenuContact}}</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="text-center">
+                    <div class="text-center" id=" hidden-icon-wrapper">
+                        <app-language [page]="page"></app-language>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--====================  End of mobile menu overlay  ====================-->
+</div>

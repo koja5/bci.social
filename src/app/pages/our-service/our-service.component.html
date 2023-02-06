@@ -1,0 +1,26 @@
+<!-- breadcrumb-area start -->
+<div *ngIf="language">
+    <div class="breadcrumb-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_box text-center">
+                        <h2 class="breadcrumb-title">{{language.servicesTitle}}</h2>
+                        <h5 class="breadcrumb-title">{{language.servicesText}}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumb-area end -->
+
+
+    <div id="main-wrapper">
+        <div class="site-wrapper-reveal">
+
+            <app-services></app-services>
+            <app-feature></app-feature>
+            <app-call-us-promo></app-call-us-promo>
+        </div>
+    </div>
+</div>
