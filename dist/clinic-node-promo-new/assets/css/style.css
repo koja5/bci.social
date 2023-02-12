@@ -14051,13 +14051,21 @@ blockquote {
 
 @media only screen and (max-width: 767px) {
   .resolutions-hero-space {
-    height: 480px;
+    height: 700px;
+  }
+
+  .vc_row-separator.bottom {
+    display: none;
+  }
+
+  .image-box-wrap {
+    text-align: center;
   }
 }
 
 @media only screen and (max-width: 575px) {
   .resolutions-hero-space {
-    height: 480px;
+    height: 700px;
   }
 }
 
