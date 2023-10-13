@@ -3,10 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>BCI - Perfection in App Development</title>
-  <meta name="title" content="BCI - Perfection in App Development">
-  <meta name="description"
-    content="Wir nehmen gerne Herausforderungen an, bringen das Wesentliche auf den Punkt und setzen Lösungen für Sie um. Am Stand der Technik in der Software-Entwicklung, mit höchster Qualität, einer engen Zusammenarbeit mit unseren Kunden und absoluter Termintreue unterstützen wir Sie bei der Optimierung Ihrer Geschäftsprozesse und der Umsetzung neuer Ideen">
+  <title>Perfection in App Development</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
