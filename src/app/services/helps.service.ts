@@ -8,11 +8,15 @@ export class HelpsService {
   constructor(private http: HttpClient) {}
 
   getLanguage(language: any) {
-    return this.http.get('../assets/languages/home/' + language + '.json');
+    return this.http.get(
+      window.location.origin + '/assets/languages/home/' + language + '.json'
+    );
   }
 
   getAllLangs() {
-    return this.http.get('./assets/languages/choose-lang.json');
+    return this.http.get(
+      window.location.origin + '/assets/languages/choose-lang.json'
+    );
   }
 
   setSelectionLanguage(language: string) {
@@ -25,7 +29,12 @@ export class HelpsService {
 
   getLanguageFromFolder(folder: string, language: any) {
     return this.http.get(
-      '../assets/languages/pages/' + folder + '/' + language + '.json'
+      window.location.origin +
+        '/assets/languages/pages/' +
+        folder +
+        '/' +
+        language +
+        '.json'
     );
   }
 

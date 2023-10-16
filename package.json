@@ -6,7 +6,11 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "dev:ssr": "ng run ClinicNodePromoNew:serve-ssr",
+    "serve:ssr": "node dist/ClinicNodePromoNew/server/main.js",
+    "build:ssr": "ng build && ng run ClinicNodePromoNew:server",
+    "prerender": "ng run ClinicNodePromoNew:prerender"
   },
   "private": true,
   "dependencies": {
@@ -17,7 +21,12 @@
     "@angular/forms": "^16.2.9",
     "@angular/platform-browser": "^16.2.9",
     "@angular/platform-browser-dynamic": "^16.2.9",
+    "@angular/platform-server": "^16.2.9",
     "@angular/router": "^16.2.9",
+    "@nguniversal/express-engine": "^16.2.0",
+    "express": "^4.15.2",
+    "localstorage-polyfill": "^1.0.1",
+    "mock-browser": "^0.92.14",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.3"
@@ -26,6 +35,8 @@
     "@angular-devkit/build-angular": "^16.2.6",
     "@angular/cli": "~16.2.6",
     "@angular/compiler-cli": "^16.2.9",
+    "@nguniversal/builders": "^16.2.0",
+    "@types/express": "^4.17.0",
     "@types/jasmine": "~4.0.0",
     "@types/node": "^20.8.5",
     "jasmine-core": "~4.1.0",
